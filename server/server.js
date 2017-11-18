@@ -7,12 +7,16 @@ var app = express();
 
 
 app.use(express.static('server/public'));
-//makes a lot of those choices for us to send static files
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/calculate', getNumbers);
 
+app.use('/get-numbers', getNumbers);
 
 app.listen (port, function(){
     console.log('listening on port', port);
 });
+
+
+// app.get('/calculate', function(req, res){
+//     res.send('Hello????');
+// });
