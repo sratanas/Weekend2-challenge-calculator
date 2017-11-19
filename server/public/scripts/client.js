@@ -2,7 +2,8 @@ console.log('client.js is loaded');
 
 $(document).ready(function(){
     console.log('JQ');
-
+    $('#clearButton').on('click', clear);
+    
 
     $('.operators').on('click', function () {
         console.log('hit a button')
@@ -48,12 +49,10 @@ $(document).ready(function(){
                     $('ul').append('<li>'+answer+'</li>')
                 }
                
-
-                
-
-
-              
         }});
     
     
 }})
+function clear(){
+    
+}

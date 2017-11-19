@@ -1,0 +1,11 @@
+div {
+    height: 300px;
+    width: 150px;
+    background-color: gray;
+    padding: 20px;
+    margin-left: 30px;
+}
+
+.inputs {
+    margin:4px;
+}
