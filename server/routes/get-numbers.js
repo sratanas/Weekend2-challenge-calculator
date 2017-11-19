@@ -11,10 +11,20 @@ router.get('/calculate', function (req, res) {
 
 router.get('/all', function (req, res){
     for (var i = 0; i < objectArray.length; i++){
+        console.log(objectArray)
         res.send(objectArray[i]);
     }
    
 })
+
+// router.get('/all', function (req, res){
+//     console.log('is the calculator working?')
+//     console.log(toSend);
+//     var toSend = theCalculator(objectArray)
+//         res.send(toSend);
+//     }
+   
+// )
 
 router.post('/new', function (req, res){
     console.log('hello is this logging on the terminal')

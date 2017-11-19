@@ -45,7 +45,7 @@ $(document).ready(function(){
                     $('ul').append('<li>'+answer+'</li>')
                 }
                 else if (response.typeOfMath == "divide"){
-                    answer = Number(response.inputOne) / Number(response.inputTwo);
+                    answer = Number(rresponse.inputOne) / Number(response.inputTwo);
                     $('ul').append('<li>'+answer+'</li>')
                 }
                
@@ -54,5 +54,5 @@ $(document).ready(function(){
     
 }})
 function clear(){
-    
+    $('.inputs').val('');
 }
